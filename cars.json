@@ -1,0 +1,473 @@
+[
+  {
+    "_id": "1",
+    "owner": "1",
+    "name": "Mercedes Benz",
+    "description": "This is a beautiful apartment located near the commons. It is a 2 bedroom apartment with a full kitchen and bathroom. It is available for weekly or monthly rentals.",
+    "brand": "Mercedes",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 2,
+    "price": 20000,
+    "power": 1500,
+    "mileage": 0,
+    "year": 2012,
+    "rent": true,
+    "rates": {
+      "weekly": 1000,
+      "monthly": 4000
+    },
+    "location": {
+      "street": "120 Tremont Street",
+      "city": "Boston",
+      "state": "MA",
+      "zipcode": "02108"
+    },
+    "features": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Free Parking",
+      "Hot Tub",
+      "24/7 Security",
+      "Wheelchair Accessible",
+      "Elevator Access",
+      "Dishwasher",
+      "Swimming Pool",
+      "Gym/Fitness Center",
+      "Air Conditioning",
+      "Smart TV",
+      "Coffee Maker"
+    ],
+    "seller": {
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "phone": "617-555-5555"
+    },
+    "images": ["a1.jpg", "a2.jpg", "a3.jpg"],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "2",
+    "owner": "1",
+    "name": "Cozy Downtown Loft",
+    "description": "A cozy downtown loft with great city views.",
+    "brand": "Ford",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 1,
+    "price": 1,
+    "power": 1800,
+    "mileage": 1800,
+    "year": 2014,
+    "rent": true,
+    "rates": {
+      "weekly": 1000,
+      "monthly": 4000
+    },
+    "location": {
+      "street": "45 Main Street",
+      "city": "New York",
+      "state": "NY",
+      "zipcode": "10001"
+    },
+    "features": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Free Parking",
+      "Hot Tub",
+      "24/7 Security",
+      "Wheelchair Accessible",
+      "Elevator Access",
+      "Dishwasher",
+      "Swimming Pool",
+      "Gym/Fitness Center",
+      "Air Conditioning",
+      "Smart TV",
+      "Coffee Maker"
+    ],
+    "seller": {
+      "name": "Jane Smith",
+      "email": "jane@gmail.com",
+      "phone": "212-555-5555"
+    },
+    "images": ["b1.jpg", "b2.jpg", "b3.jpg"],
+    "createdAt": "2024-01-02T00:00:00.000Z",
+    "updatedAt": "2024-01-02T00:00:00.000Z"
+  },
+  {
+    "_id": "3",
+    "owner": "2",
+    "name": "Luxury Condo with a View",
+    "description": "Experience luxury in this stunning condo with breathtaking views.",
+    "brand": "Chevrolet",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 3,
+    "price": 2,
+    "power": 2200,
+    "mileage": 2200,
+    "year": 2010,
+    "rent": true,
+    "rates": {
+      "daily": 200
+    },
+    "location": {
+      "street": "500 Lux Lane",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipcode": "90001"
+    },
+    "features": [
+      "Wifi",
+      "Full kitchen",
+      "Washer & Dryer",
+      "Free Parking",
+      "Hot Tub",
+      "24/7 Security",
+      "Wheelchair Accessible",
+      "Elevator Access",
+      "Dishwasher",
+      "Swimming Pool",
+      "Gym/Fitness Center",
+      "Air Conditioning",
+      "Smart TV",
+      "Coffee Maker"
+    ],
+    "seller": {
+      "name": "David Johnson",
+      "email": "david@gmail.com",
+      "phone": "213-555-5555"
+    },
+    "images": ["c1.jpg", "c2.jpg", "c3.jpg"],
+    "createdAt": "2024-01-03T00:00:00.000Z",
+    "updatedAt": "2024-01-03T00:00:00.000Z"
+  },
+  {
+    "_id": "4",
+    "owner": "2",
+    "name": "Charming Cottage Getaway",
+    "description": "Escape to this charming cottage for a peaceful retreat.",
+    "brand": "Audi",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 1,
+    "price": 1,
+    "power": 900,
+    "mileage": 900,
+    "year": 2020,
+    "rent": true,
+    "rates": {
+      "weekly": 2000
+    },
+    "location": {
+      "street": "123 Countryside Lane",
+      "city": "Austin",
+      "state": "TX",
+      "zipcode": "78701"
+    },
+    "features": [
+      "Fireplace",
+      "Outdoor Grill/BBQ",
+      "Balcony/Patio",
+      "Coffee Maker"
+    ],
+    "seller": {
+      "name": "Emily Davis",
+      "email": "emily@gmail.com",
+      "phone": "512-555-5555"
+    },
+    "images": ["d1.jpg", "d2.jpg", "d3.jpg"],
+    "createdAt": "2024-01-04T00:00:00.000Z",
+    "updatedAt": "2024-01-04T00:00:00.000Z"
+  },
+  {
+    "_id": "5",
+    "owner": "3",
+    "name": "Modern Downtown Studio",
+    "description": "Stay in style in this modern downtown studio apartment.",
+    "brand": "BMW",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 1,
+    "price": 1,
+    "power": 900,
+    "mileage": 900,
+    "year": 2022,
+    "rent": true,
+    "rates": {
+      "weekly": 1100,
+      "monthly": 4200
+    },
+    "location": {
+      "street": "75 Urban Avenue",
+      "city": "Chicago",
+      "state": "IL",
+      "zipcode": "60601"
+    },
+    "features": [
+      "High-Speed Internet",
+      "Smart TV",
+      "Air Conditioning",
+      "Gym/Fitness Center",
+      "Outdoor Grill/BBQ"
+    ],
+    "seller": {
+      "name": "Michael Brown",
+      "email": "michael@gmail.com",
+      "phone": "312-555-5555"
+    },
+    "images": ["e1.jpg", "e2.jpg", "e3.jpg"],
+    "createdAt": "2024-01-05T00:00:00.000Z",
+    "updatedAt": "2024-01-05T00:00:00.000Z"
+  },
+  {
+    "_id": "6",
+    "owner": "3",
+    "name": "Seaside Retreat",
+    "description": "Escape to this seaside house for a relaxing getaway.",
+    "brand": "Ferrari",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 4,
+    "price": 3,
+    "power": 2800,
+    "mileage": 2800,
+    "year": 2011,
+    "rent": true,
+    "location": {
+      "street": "456 Oceanfront Drive",
+      "city": "Miami",
+      "state": "FL",
+      "zipcode": "33101"
+    },
+    "rates": {
+      "daily": 500,
+      "weekly": 2500
+    },
+    "features": [
+      "Beach Access",
+      "Swimming Pool",
+      "Balcony/Patio",
+      "Smart TV",
+      "Outdoor Grill/BBQ"
+    ],
+    "seller": {
+      "name": "Sarah Wilson",
+      "email": "sarah@gmail.com",
+      "phone": "305-555-5555"
+    },
+    "images": ["f1.jpg", "f2.jpg", "f3.jpg"],
+    "createdAt": "2024-01-06T00:00:00.000Z",
+    "updatedAt": "2024-01-06T00:00:00.000Z"
+  },
+  {
+    "_id": "7",
+    "owner": "4",
+    "name": "Rustic Cabin in the Woods",
+    "description": "Experience nature in this cozy rustic cabin.",
+    "brand": "Lamborghini",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 2,
+    "price": 1,
+    "power": 1100,
+    "mileage": 1100,
+    "year": 2019,
+    "rent": true,
+    "rates": {
+      "daily": 475,
+      "weekly": 2000
+    },
+    "location": {
+      "street": "789 Forest Lane",
+      "city": "Denver",
+      "state": "CO",
+      "zipcode": "80201"
+    },
+    "features": [
+      "Fireplace",
+      "Outdoor Grill/BBQ",
+      "Hiking Trails Access",
+      "Pet-Friendly"
+    ],
+    "seller": {
+      "name": "Robert Anderson",
+      "email": "robert@gmail.com",
+      "phone": "303-555-5555"
+    },
+    "images": ["g1.jpg", "g2.jpg", "g3.jpg"],
+    "createdAt": "2024-01-07T00:00:00.000Z",
+    "updatedAt": "2024-01-07T00:00:00.000Z"
+  },
+  {
+    "_id": "8",
+    "owner": "5",
+    "name": "Ski-In/Ski-Out Chalet",
+    "description": "Hit the slopes from this cozy ski-in/ski-out chalet.",
+    "brand": "Ford",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 3,
+    "price": 2,
+    "power": 1800,
+    "mileage": 1800,
+    "year": 2021,
+    "rent": true,
+    "rates": {
+      "daily": 300,
+      "weekly": 1100
+    },
+    "location": {
+      "street": "321 Mountain Road",
+      "city": "Aspen",
+      "state": "CO",
+      "zipcode": "81611"
+    },
+    "features": [
+      "Ski Equipment Storage",
+      "Fireplace",
+      "Balcony/Patio",
+      "Smart TV"
+    ],
+    "seller": {
+      "name": "Jennifer Martin",
+      "email": "jennifer@gmail.com",
+      "phone": "970-555-5555"
+    },
+    "images": ["h1.jpg", "h2.jpg", "h3.jpg"],
+    "createdAt": "2024-01-08T00:00:00.000Z",
+    "updatedAt": "2024-01-08T00:00:00.000Z"
+  },
+  {
+    "_id": "9",
+    "owner": "6",
+    "name": "Mountain View Retreat",
+    "description": "Enjoy stunning mountain views from this spacious retreat.",
+    "brand": "BMW",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 4,
+    "price": 3,
+    "power": 2400,
+    "mileage": 2400,
+    "year": 2023,
+    "rent": true,
+    "rates": {
+      "weekly": 1000,
+      "monthly": 3800
+    },
+    "location": {
+      "street": "600 Summit Drive",
+      "city": "Boulder",
+      "state": "CO",
+      "zipcode": "80301"
+    },
+    "features": [
+      "Mountain View",
+      "Hiking Trails Access",
+      "Air Conditioning",
+      "Smart TV",
+      "Outdoor Grill/BBQ"
+    ],
+    "seller": {
+      "name": "Lisa Taylor",
+      "email": "lisa@gmail.com",
+      "phone": "303-555-5555"
+    },
+    "images": ["i1.jpg", "i2.jpg", "i3.jpg"],
+    "createdAt": "2024-01-09T00:00:00.000Z",
+    "updatedAt": "2024-01-09T00:00:00.000Z"
+  },
+  {
+    "_id": "10",
+    "owner": "7",
+    "name": "Historic Downtown Loft",
+    "description": "Step back in time with a stay in this historic downtown loft.",
+    "brand": "Mercedes",
+    "type": "sports",
+    "condition": "new",
+    "fuel": "petrol",
+    "transmission": "manual",
+    "drive": "all-wheel drive",
+    "color": "black",
+    "capacity": 3000,
+    "seats": 2,
+    "price": 1,
+    "power": 1200,
+    "mileage": 1200,
+    "year": 2024,
+    "rent": true,
+    "rates": {
+      "weekly": 550,
+      "monthly": 2100
+    },
+    "location": {
+      "street": "123 History Lane",
+      "city": "Philadelphia",
+      "state": "PA",
+      "zipcode": "19101"
+    },
+    "features": [
+      "High-Speed Internet",
+      "Air Conditioning",
+      "Smart TV",
+      "Coffee Maker"
+    ],
+    "seller": {
+      "name": "Matthew Harris",
+      "email": "matthew@gmail.com",
+      "phone": "215-555-5555"
+    },
+    "images": ["j1.jpg", "j2.jpg", "j3.jpg"],
+    "createdAt": "2024-01-10T00:00:00.000Z",
+    "updatedAt": "2024-01-10T00:00:00.000Z"
+  }
+]
