@@ -29,7 +29,7 @@ const Messages = () => {
   return loading ? (<Spinner loading={loading} />) : (
     <section>
       <div className="container m-auto py-6 md:py-12 max-w-6xl">
-        <div className="mb-4 shadow-md rounded-md">
+        <div className="mb-4 rounded-md">
           <h1 className="pl-2 text-2xl md:text-3xl font-semibold text-orange mb-6">Messages</h1>
           <div className="space-y-4">
             {messages.length === 0 ? (<p className="text-light pl-3">You have no messages</p>) : (

@@ -105,7 +105,7 @@ const CarContactForm = ({car}) => {
                 Email
               </label>
               <input
-                className={`${emailError ? 'border-[#E70000]' : 'border-borderGray'} bg-darkGray border focus:border-orange w-full p-4 pb-0 leading-tight h-14 rounded-xl focus:outline-none focus:shadow-outline`}
+                className={`${emailError ? 'border-[#E70000]' : 'border-borderGray'} bg-darkGray border focus:border-orange w-full p-4 pb-0 leading-tight h-14 rounded-xl focus:outline-none`}
                 id="email"
                 type="text"
                 value={email}
@@ -119,7 +119,7 @@ const CarContactForm = ({car}) => {
                 Phone
               </label>
               <input
-                className={`${phoneError ? 'border-[#E70000]' : 'border-borderGray'} bg-darkGray border  focus:border-orange w-full p-4 pb-0 leading-tight h-14 rounded-xl focus:outline-none focus:shadow-outline`}
+                className={`${phoneError ? 'border-[#E70000]' : 'border-borderGray'} bg-darkGray border  focus:border-orange w-full p-4 pb-0 leading-tight h-14 rounded-xl focus:outline-none`}
                 id="phone"
                 type="text"
                 value={phone}
@@ -133,7 +133,7 @@ const CarContactForm = ({car}) => {
               Enter your message
             </label>
             <textarea
-              className={`${bodyError ? 'border-[#E70000]' : 'border-borderGray'} placeholder:text-silverGray bg-darkGray border  focus:border-orange rounded-xl w-full p-4 pt-6 pb-0 h-44 resize-none focus:outline-none focus:shadow-outline`}
+              className={`${bodyError ? 'border-[#E70000]' : 'border-borderGray'} placeholder:text-silverGray bg-darkGray border  focus:border-orange rounded-xl w-full p-4 pt-6 pb-0 h-44 resize-none focus:outline-none`}
               id="body"
               value={body}
               onChange={(e) => setBody(e.target.value)}
@@ -142,7 +142,7 @@ const CarContactForm = ({car}) => {
             {bodyError && <span className="block text-[#f00] opacity-90 text-sm">{bodyError}</span>}
           </div>
           <button
-            className="bg-dark border border-borderGray hover:border-orange hover:text-orange text-light font-bold py-2 px-4 rounded-xl w-full focus:outline-none focus:shadow-outline mb-4"
+            className="bg-dark border border-borderGray hover:border-orange hover:text-orange text-light font-bold py-2 px-4 rounded-xl w-full focus:outline-none mb-4"
             type="submit"
           >
             Send message

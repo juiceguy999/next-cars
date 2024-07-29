@@ -80,7 +80,7 @@ export const CSSTabs = ({tabs, selectedTabIndex, setSelectedTab,}) => {
         return (
           <Link
             key={i}
-            className={`relative rounded-md flex items-center h-8 px-4 z-20 bg-transparent text-base cursor-pointer select-none transition-colors ${(hoveredTabIndex === i || selectedTabIndex === i) ? 'text-light' : 'text-silverGray'}`}
+            className={`relative flex items-center h-8 px-4 p-5 z-20 bg-transparent text-base cursor-pointer select-none transition-colors ${(hoveredTabIndex === i || selectedTabIndex === i) ? 'text-light' : 'text-silverGray'}`}
             ref={(el) => (buttonRefs[i] = el)}
             onPointerEnter={(e) => onEnterTab(e, i)}
             onClick={() => onSelectTab(i)}
@@ -91,7 +91,7 @@ export const CSSTabs = ({tabs, selectedTabIndex, setSelectedTab,}) => {
         );
       })}
       <div
-        className="absolute z-10 top-0 left-0 rounded-3xl bg-backgroundGray/50 transition-[width]"
+        className="absolute z-10 top-0 left-0 rounded-xl bg-backgroundGray/60 transition-[width]"
         style={hoverStyles}
       />
       <div

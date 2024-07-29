@@ -48,7 +48,7 @@ const MessageCard = ({message}) => {
 
 
   return (
-    <div className="relative bg-darkGray text-light p-3 md:p-4 rounded-none md:rounded-md shadow-md">
+    <div className="relative bg-darkGray text-light p-3 md:p-4 rounded-none md:rounded-md">
       <div className="flex justify-between items-start">
         <div className={`${isRead ? 'bg-silverGray opacity-50' : 'bg-orange'} rounded-full w-4 h-4`}></div>
         <button onClick={handleDeleteClick} className="bg-dark hover:bg-[#1a1a1a] border border-borderGray font-semibold p-1 rounded-md">

@@ -5,7 +5,7 @@ const CarDetails = ({car, className=''}) => {
   return (
     <div className={`${className} text-light`}>
       <div className="flex items-center justify-between">
-        <p className={`${car.condition.toLowerCase() === 'new' ? 'font-bold rounded-md text-sm py-1 px-2 bg-dark text-orange border border-borderGray uppercase tracking-widest mb-4' : 'mb-1'}`}>{car.condition}</p>
+        <p className={`${car.condition.toLowerCase() === 'new' ? 'font-bold rounded-md text-sm py-1 px-2 bg-dark text-orange uppercase tracking-widest mb-4' : 'mb-1'}`}>{car.condition}</p>
         <BookmarkButton car={car} />
       </div>
       <h1 className="text-2xl font-bold mb-2">{car.name}</h1>

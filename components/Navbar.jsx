@@ -16,6 +16,7 @@ import UserIcon from "@/components/icons/UserIcon";
 import PlusIcon from "@/components/icons/PlusIcon";
 import HeartIcon from "@/components/icons/HeartIcon";
 import ExitIcon from "@/components/icons/ExitIcon";
+import GearIcon from "@/components/icons/GearIcon";
 
 import { CSSTabs } from "@/components/CSSTabs";
 import { useTabs } from "@/components/useTabs";
@@ -35,11 +36,6 @@ const Navbar = () => {
         label: "Cars",
         id: "Cars",
         href: "/cars"
-      },
-      {
-        label: "FAQ",
-        id: "FAQ",
-        href: "/faq"
       }
     ],
   });
@@ -132,7 +128,7 @@ const Navbar = () => {
           >
             <Link
             href="/cars/add"
-            className={`${pathname === '/cars/add' ? 'md:hidden' : ''} font-semibold text-sm text-dark bg-orangeGradient rounded-3xl px-3 py-2 hidden md:block`}
+            className={`${pathname === '/cars/add' ? 'md:hidden' : ''} font-semibold text-sm text-dark bg-orangeGradient rounded-md px-3 py-2 hidden md:block`}
             >Sell Car</Link>
             <Link href="/messages" className="relative rounded-md bg-dark p-1 hover:bg-backgroundGray transition-all">
                 <span className="sr-only">View notifications</span>
@@ -188,6 +184,16 @@ const Navbar = () => {
                   tabIndex="-1"
                   id="user-menu-item-0"
                   ><span>Add Post</span><PlusIcon className="w-6 h-6 fill-silverGray group-hover:fill-orange transition-colors" /></Link>
+                {session.user.admin && (<Link
+                  onClick={() => {
+                    setIsProfileMenuOpen(false);
+                  }}
+                  href="/cars/admin"
+                  className="flex items-center justify-between gap-2 px-6 py-3 font-medium text-base text-silverGray group hover:text-orange hover:bg-darkGray transition-colors"
+                  role="menuitem"
+                  tabIndex="-1"
+                  id="user-menu-item-0"
+                  ><span>Dashboard</span><GearIcon className="w-6 h-6 fill-silverGray group-hover:fill-orange transition-colors" /></Link>)}
                 <Link
                   onClick={() => {
                     setIsProfileMenuOpen(false);
@@ -226,10 +232,6 @@ const Navbar = () => {
             href="/cars"
             className={`${pathname === '/cars' ? 'bg-black' : ''} text-white block rounded-md px-3 py-2 text-base font-medium`}
             >Cars</Link>
-          {session && (<Link
-            href="/cars/add"
-            className={`${pathname === '/cars/add' ? 'bg-black' : ''} text-white block rounded-md px-3 py-2 text-base font-medium`}
-            >Sell Car</Link>)}
         </div>
       </div>)}
     </nav>

@@ -28,6 +28,10 @@ module.exports = {
       },
       backgroundImage: {
         'orangeGradient': 'linear-gradient(to right, #ffaf00, #ff4f00)'
+      },
+      boxShadow: {
+        'focus': '0 0 0 1px hsla(0,0%,100%,.51), 0 0 0 4px hsla(0,0%,100%,.24)',
+        'orangeInset': 'rgba(255,40,0,0.05) 0px -23px 25px 0px inset, rgba(255,40,0,0.04) 0px -36px 30px 0px inset, rgba(255,40,0,0.03) 0px -79px 40px 0px inset'
       }
     },
   },

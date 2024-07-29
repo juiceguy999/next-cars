@@ -43,12 +43,12 @@ const CarsAdminPage = () => {
 
   return loading ? (<Spinner loading={loading}/>) : (
     <section>
-      <div className="text-light container m-auto py-20 md:py-12 max-w-6xl">
-        <h1 className="text-orange text-3xl font-bold mb-10 hidden md:block">Admin Dashboard</h1>
-          <div className="mt-10 px-4">
+      <div className="text-light container m-auto py-6 md:py-12 max-w-6xl">
+        <h1 className="text-orange/100 text-2xl md:text-3xl font-bold mb-6 md:mb-10 pl-4">Moderation Dashboard</h1>
+          <div className=" px-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {cars.length === 0 ? (
-              <p>No added cars</p>
+              <p className="py-3 pl-3 px-4 rounded-lg bg-dark w-fit text-[18px] font-semibold text-silverGray">There are no cars for approval.</p>
             ) : (
               cars.map((car) => (<CarAdminListing key={car._id} car={car} onDelete={handleDelete} />))
             )}

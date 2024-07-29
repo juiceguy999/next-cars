@@ -17,7 +17,8 @@ export const GET = async (request) => {
       $or: [
         {name: searchPattern},
         {description: searchPattern},
-      ]
+      ],
+      published: true
     }
 
     if(brand && brand !== 'All') {

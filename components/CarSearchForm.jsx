@@ -18,20 +18,20 @@ const CarSearchForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-3 mx-auto max-w-2xl w-full flex flex-col gap-4 md:flex-row items-center">
-      <div className="w-full md:w-3/5">
+    <form onSubmit={handleSubmit} className="mx-auto max-w-2xl w-full flex flex-col gap-4 md:flex-row items-center">
+      <div className="w-full md:w-3/5 focus-within:shadow-focus transition-all rounded-lg">
         <label htmlFor="search" className="sr-only">Search</label>
         <input
           type="text"
           id="search"
           placeholder="Enter keywords or choose brand"
-          className="w-full px-4 py-3 border border-borderGray rounded-lg bg-dark text-light placeholder:text-silverGray focus:outline-none"
+          className="w-full px-4 py-3 border border-borderGray rounded-lg bg-dark text-light placeholder:text-[#8f8f8f] focus:outline-none"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
       <div className="w-full md:w-2/5 flex gap-4 items-center">
-        <div className="flex-grow">
+        <div className="flex-grow focus-within:shadow-focus transition-all rounded-lg">
           <label htmlFor="brand" className="sr-only">Car Brand</label>
           <select value={brand} onChange={(e) => setBrand(e.target.value)} id="brand" className="w-full px-4 py-3 border border-borderGray rounded-lg bg-dark text-light focus:outline-none">
             <option value="All">All</option>
@@ -68,7 +68,7 @@ const CarSearchForm = () => {
             <option value="Bugatti">Bugatti</option>
           </select>
         </div>
-        <button type="submit" className="w-16 h-12 hover:bg-backgroundGray transition-all flex items-center justify-center gap-2 rounded-lg bg-darkGray border-borderGray border">
+        <button type="submit" className="w-14 h-12 hover:bg-backgroundGray transition-all flex items-center justify-center gap-2 rounded-lg bg-dark border-borderGray border">
           <SearchIcon className="w-6 h-6 stroke-light"/>
         </button>
       </div>
@@ -76,4 +76,4 @@ const CarSearchForm = () => {
   )
 }
 
-export default CarSearchForm
+export default CarSearchForm;

@@ -16,18 +16,18 @@ const CarCard = ({car}) => {
   }
 
   return (
-    <Link href={`/cars/${car._id}`} className="shadow-md rounded-xl overflow-hidden relative bg-darkGray">
+    <Link href={`/cars/${car._id}`} className="group rounded-xl overflow-hidden relative bg-darkGray">
       <div className="relative overflow-hidden pb-[50%] select-none">
         <Image
           src={car.images[0]}
           alt=""
-          className='w-full h-full object-cover'
+          className='w-full h-full object-cover group-hover:scale-105 transition-all duration-500'
           sizes='100%'
           fill
         />
-        {car.rent && (<span className='absolute bottom-1 left-1 font-semibold rounded-md text-xs py-1 px-2 bg-dark text-light border border-borderGray tracking-wider' >RENT</span>)}
-        {(car.condition.toLowerCase() === 'new') && (!car.rent) && (<span className='absolute bottom-1 left-1 font-semibold rounded-md text-xs py-1 px-2 bg-dark text-orange border border-borderGray tracking-widest' >NEW</span>)}
-        {(car.condition.toLowerCase() === 'broken') && (!car.rent) && (<span className='absolute bottom-1 left-1 font-semibold rounded-md text-xs py-1 px-2 bg-dark text-[#f00]/90 border border-borderGray tracking-widest' >BROKEN</span>)}
+        {car.rent && (<span className='absolute bottom-1 left-1 font-semibold rounded-md text-xs py-1 px-2 bg-dark text-light  tracking-wider' >RENT</span>)}
+        {(car.condition.toLowerCase() === 'new') && (!car.rent) && (<span className='absolute bottom-1 left-1 font-semibold rounded-md text-xs py-1 px-2 bg-dark text-orange  tracking-widest' >NEW</span>)}
+        {(car.condition.toLowerCase() === 'broken') && (!car.rent) && (<span className='absolute bottom-1 left-1 font-semibold rounded-md text-xs py-1 px-2 bg-dark text-[#f00]/90  tracking-widest' >BROKEN</span>)}
       </div>
       <div className="py-3 px-4 text-white">
         <h3 className="text-left text-lg font-semibold truncate">{car.name}</h3>

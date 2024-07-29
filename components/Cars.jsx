@@ -36,8 +36,8 @@ const Cars = () => {
   }
 
   return loading ? (<Spinner loading={loading} />) : (
-    <section className="px-4 py-6">
-      <div className="container m-auto">
+    <section className="px-4 py-6 min-h-[calc(100vh-81px)] flex flex-col justify-between gap-6">
+      <div className="container mx-auto">
         {cars.length === 0 ? (
           <p className='text-light'>No cars found</p>
         ) : (
@@ -47,8 +47,8 @@ const Cars = () => {
             ))}
           </div>
         )}
-        <Pagination page={page} pageSize={pageSize} totalItems={totalItems} onPageChange={handlePageChange} />
       </div>
+      <Pagination page={page} pageSize={pageSize} totalItems={totalItems} onPageChange={handlePageChange} />
     </section>
   )
 }

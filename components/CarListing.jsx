@@ -21,13 +21,8 @@ const CarListing = ({car, onDelete}) => {
     }
   }
 
-  // const handleDeleteCar = (id) => {
-  //   toast.error('Car listing deleted (no)');
-  //   onDelete(id);
-  // }
-
   return (
-    <div className="shadow-md rounded-xl overflow-hidden relative bg-darkGray">
+    <div className="rounded-xl overflow-hidden relative bg-darkGray">
       <Link href={`/cars/${car._id}`} className="relative overflow-hidden pb-[50%] block">
         <Image
           src={car.images[0]}
